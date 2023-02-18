@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overlay one div tag over another and centre div tags</title>
+    <meta charset="UTF-8" />
+    <style>
+      .square-one {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(100%);
+        margin: 0 auto;
+      }
+
+      .square-two {
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .square-three {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        opacity: 0.5;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+      }
+      </style>
+  </head>
+
+  <body>
+      <div class="square-one">
+        <div class="square-two"></div>
+        <div class="square-three"></div>
+      </div>
+  </body>
+</html>
