@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import Grandchild from './Grandchild.vue';
+import GrandChild from './GrandChild.vue';
 
 export default {
   inject: ['message'],
   components: {
-    Grandchild,
+    GrandChild,
   },
 };
 </script>
